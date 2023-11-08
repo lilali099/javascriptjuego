@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./trivia.js"></script>
+</head>
+<body>
+    <div class="contenedorpagina">
+        <header>
+        <h1>¿CUÁNTO SABES DE MI?</h1>
+    </header>
+        <div class="contenedor">
+    <section id="p0"> 
+        <h3>1- ¿Cuál es mi nombre completo?</h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0, this)">Jimena Lorena Fernándes
+        </label>
+        <label>
+            <input type="radio" value="2" name="p0"onclick="respuesta(0, this)">Julieta Lucia Ferreyra
+        </label>
+        <label>
+            <input type="radio" value="3" name="p0"onclick="respuesta(0, this)">Jimena Lucia Fernández
+        </label>
+    </section>
+    <section id="p1"> 
+        <h3>2- ¿Cuál es mi edad?</h3>
+        <label>
+            <input type="radio" value="1" name="p1"onclick="respuesta(1, this)">22 años
+        </label>
+        <label>
+            <input type="radio" value="2" name="p1"onclick="respuesta(1, this)">24 años
+        </label>
+        <label>
+            <input type="radio" value="3" name="p1"onclick="respuesta(1, this)">20 años
+        </label>
+    </section>
+    <section id="p2"> 
+        <h3>2- ¿Dónde estoy estudiando?</h3>
+        <label>
+            <input type="radio" value="1" name="p2"onclick="respuesta(2, this)">UADE
+        </label>
+        <label>
+            <input type="radio" value="2" name="p2"onclick="respuesta(2, this)">UBA
+        </label>
+        <label>
+            <input type="radio" value="3" name="p2"onclick="respuesta(2, this)">UNSAM
+        </label>
+    </section>
+    <section id="p3">
+    <h3>3- ¿Qué estoy estudiando?</h3>
+    <label>
+        <input type="radio" value="1" name="p3"onclick="respuesta(3, this)">Licenciatura en gestión
+    </label>
+    <label>
+        <input type="radio" value="2" name="p3"onclick="respuesta(3, this)">Ingenieria informática
+    </label>
+    <label>
+        <input type="radio" value="3" name="p3"onclick="respuesta(3, this)">Licenciatura en gestión de tecnología de la información
+    </label>
+</section>
+</section>
+<button onclick="corregir()">CORREGIR</button>
+<H2>Cantidad de respuestas acertadas: <span id="resultado"></acertadas:span></H2>
+   
+
+   </script>
+   
+    
+
+   
+</body>
+</div>
+</html>
